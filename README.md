@@ -39,6 +39,17 @@ If you can’t install Git, use the ZIP download:
 2. Click **Code → Download ZIP**
 3. Extract the ZIP, then open the folder in your terminal.
 
+## If the repo looks empty
+
+If you only see `.gitkeep` (and no `backend`, `frontend`, or other files), it means the repository doesn’t contain the application code yet. You can confirm with:
+```powershell
+dir
+```
+
+**What to do next:**
+- Make sure you cloned the correct repo and branch.
+- If you expected app files, share the output of `dir` so the project structure can be verified and the next steps provided.
+
 ## Next Steps
 
-Once the repo is downloaded, follow the instructions in the project docs for installing dependencies and running the app.
+Once the repo includes the application files, follow the instructions in the project docs for installing dependencies and running the app.
