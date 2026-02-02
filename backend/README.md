@@ -1,6 +1,6 @@
 # Backend
 
-Minimal FastAPI placeholder to confirm the backend exists in the repository.
+Minimal FastAPI backend for the Blog Post Helper app.
 
 ## Run locally
 

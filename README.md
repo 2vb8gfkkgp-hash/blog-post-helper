@@ -4,6 +4,32 @@ This repository provides a helper app for writing and researching blog posts. Th
 
 > Note: `README.md` is a text document. Don’t run it in PowerShell. Open it in a text editor or on GitHub.
 
+## Run the app locally
+
+You will run two servers in separate terminals: the FastAPI backend and the Next.js frontend.
+
+### 1) Backend (FastAPI)
+
+```bash
+cd backend
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+The API will be available at http://127.0.0.1:8000/health.
+
+### 2) Frontend (Next.js)
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The web UI will be available at http://localhost:3000.
+
 ## Quick Start (Windows PowerShell)
 
 1. **Install Git** (required to clone the repo):
@@ -73,7 +99,3 @@ dir
 **What to do next:**
 - Make sure you cloned the correct repo and branch.
 - If you expected app files, share the output of `dir` so the project structure can be verified and the next steps provided.
-
-## Next Steps
-
-Once the repo includes the application files, follow the instructions in the project docs for installing dependencies and running the app.
