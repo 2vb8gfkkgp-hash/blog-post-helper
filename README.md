@@ -2,6 +2,8 @@
 
 This repository provides a helper app for writing and researching blog posts. The instructions below include setup and troubleshooting tips, including how to resolve the Windows error where `git` is not recognized.
 
+> Note: `README.md` is a text document. Don’t run it in PowerShell. Open it in a text editor or on GitHub.
+
 ## Quick Start (Windows PowerShell)
 
 1. **Install Git** (required to clone the repo):
