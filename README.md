@@ -15,14 +15,20 @@ This repository provides a helper app for writing and researching blog posts. Th
      git --version
      ```
 
-2. **Clone the repo**:
+2. **Clone the repo** (use the base repo URL, not a `/tree/...` page):
    ```powershell
    cd C:\Users\<your-user>\Downloads
    git clone https://github.com/2vb8gfkkgp-hash/blog-post-helper.git
    cd blog-post-helper
    ```
 
-3. **If Git is already installed but `git` is not recognized**:
+3. **If you need a specific branch** (example: `codex/build-full-stack-app-newsroomkit`):
+   ```powershell
+   git fetch --all
+   git checkout codex/build-full-stack-app-newsroomkit
+   ```
+
+4. **If Git is already installed but `git` is not recognized**:
    - Reopen PowerShell (PATH updates require a new shell).
    - If that fails, ensure `C:\Program Files\Git\cmd` is in your PATH:
      ```powershell
@@ -33,6 +39,22 @@ This repository provides a helper app for writing and researching blog posts. Th
      $env:Path += ";C:\Program Files\Git\cmd"
      git --version
      ```
+
+## If you see “repository not found”
+
+That error usually means the **clone URL is wrong**. Make sure you are **not** cloning a URL that contains `/tree/...`.
+
+✅ Correct (clone this):
+```
+https://github.com/2vb8gfkkgp-hash/blog-post-helper.git
+```
+
+❌ Incorrect (do NOT clone this):
+```
+https://github.com/2vb8gfkkgp-hash/blog-post-helper/tree/codex/build-full-stack-app-newsroomkit/
+```
+
+If you need a branch, clone the base repo first, then run `git checkout <branch>` as shown above.
 
 ## Alternative: Download ZIP (No Git Required)
 
